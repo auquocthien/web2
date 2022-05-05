@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./trangchu.css">
+</head>
+
+<body>
+    <header>
+        <a href="./trangchu.html">
+            <img src="./img/noodle-3675045-3055204-removebg-preview.png" class="logo-img" alt="logo">
+        </a>
+        <nav class="nav">
+            <a class="nav-link" href="./trangchu.html">Home</a>
+            <a class="nav-link" href="./product.html">Product</a>
+            <a class="nav-link" href="./contact">Contact</a>
+            <a class="nav-link" href="./about">About</a>
+            <input class="nav-input" type="text">
+            <a class="nav-search" href="">search</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section-1">
+
+            <!-- <img id="img-trans" src="./img/slide_show_1.jpg" alt="banh canh quy nhon"> -->
+            <div class="slide-container">
+                <div class="slide fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./img/slide_show_1.jpg" class="slide-img">
+                    <div class="text">bánh canh</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./img/slide_show_1.jpg" class="slide-img">
+                    <div class="text">bánh canh</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./img/slide_show_1.jpg" class="slide-img">
+                    <div class="text">bánh canh</div>
+                </div>
+                <a class="prev" onclick="plushSlide(-1)">
+                    <</a>
+                        <a class="next" onclick="plushSlide(1)">></a>
+                        <div style="text-align: center;">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+            </div>
+        </section>
+        <section class="section-2">
+            <h1 class="section-2_text">Wellcome</h1>
+            <div class="pos_gh">
+                <div class="gio_hang">
+                    <a class="cart_text" href="./thanhtoan.html">Giỏ hàng</a>
+                    <p id="sc_text">ban chua chon san pham nao</p>
+                    <div id="sup_cart_items" hidden>
+                        <table id="cart_items_table">
+                            <tr class="cart_items_row">
+                                <th class="th_name">ten</th>
+                                <th class="th_quantity">so luong</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <a id="cart_btn" href="thanhtoan.html" hidden>Thanh toán</a>
+                </div>
+            </div>
+            <div class="hu_tieu">
+                <div class="container_img">
+                    <img src="./img/section_2__hu_tieu_1.jpg" alt="Hủ Tiếu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">hủ tiếu lớn</p>
+                    <p hidden id="idSP">ht_001</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__hu_tieu_1.jpg" alt="Hủ Tiếu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">hủ tiếu vừa</p>
+                    <p hidden id="idSP">ht_002</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__hu_tieu_1.jpg" alt="Hủ Tiếu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">hủ tiếu nhỏ</p>
+                    <p hidden id="idSP">ht_003</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__hu_tieu_1.jpg" alt="Hủ Tiếu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">hủ tiếu khô</p>
+                    <p hidden id="idSP">ht_004</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+            
+            <div class="pho">
+                <div class="container_img">
+                    <img src="./img/section_2__pho_1.jpg" alt="Phở" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">phở lớn</p>
+                    <p hidden id="idSP">pho_001</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__pho_1.jpg" alt="Phở" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">phở vừa</p>
+                    <p hidden id="idSP">pho_002</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__pho_1.jpg" alt="Phở" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">phở nhỏ</p>
+                    <p hidden id="idSP">pho_003</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__pho_1.jpg" alt="Phở" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">phở đặc biệt</p>
+                    <p hidden id="idSP">pho_004</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+
+            <div class="bun_rieu">
+                <div class="container_img">
+                    <img src="./img/section_2__bun_rieu_1.png" alt="Bún Riêu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">bún riêu thịt</p>
+                    <p hidden id="idSP">br_001</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__bun_rieu_1.png" alt="Bún Riêu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">bún riêu cua</p>
+                    <p hidden id="idSP">br_002</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__bun_rieu_1.png" alt="Bún Riêu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">bún riêu hải sản</p>
+                    <p hidden id="idSP">br_003</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__bun_rieu_1.png" alt="Bún Riêu" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">bún riêu đặc biệt</p>
+                    <p hidden id="idSP">br_004</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+
+            <div class="banh_canh">
+                <div class="container_img">
+                    <img src="./img/section_2__banh_canh_1.jpg" alt="Bánh canh" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">bánh canh lớn</p>
+                    <p hidden id="idSP">bc_001</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__banh_canh_1.jpg" alt="Bánh canh" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">bánh canh vừa</p>
+                    <p hidden id="idSP">bc_002</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="container_img">
+                    <img src="./img/section_2__banh_canh_1.jpg" alt="Bánh canh" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">bánh canh nhỏ</p>
+                    <p hidden id="idSP">bc_003</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div>
+                <!-- <div class="container_img">
+                    <img src="./img/section_2__banh_canh_1.jpg" alt="Bánh canh" class="image">
+                    <div class="overlay">
+                        <div class="price">300000 VND</div>
+                    </div>
+                    <p hidden id="tenSP">Bánh Canh</p>
+                    <p hidden id="idSP">bc_004</p>
+                    <a class="add_items">Thêm vào giỏ hàng</a>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="./img/noodle-3675045-3055204-removebg-preview.png" alt="" class="footer_logo">
+        <div class="footer_text">
+            <address>
+                tên công ty:<br>
+                địa chỉ tòa nhà:<br>
+                số điện thoai:<br>
+                email:<br>
+            </address>
+            <div class="footer_link">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-envelope"></i>
+            </div>
+        </div>
+        <div class="footer_map">
+            <img src="./img/footer_map.jpg" alt="">
+        </div>
+        <div class="footer_form">
+            <p class="form_text">đăng kí nhận thông tin sản phẩm</p>
+            <p class="form_text">...............................</p>
+            <input type="text" class="input_form" placeholder="Họ và tên">
+            <input type="text" class="input_form" placeholder="Email">
+            <a href="#" class="btn_form">Đăng kí</a>
+
+        </div>
+        <div class="footer_info_web_dev">
+            <pre>bản quyền thuộc về:         số điện thoại:         email:          </pre>
+        </div>
+    </footer>
+    <script src="./trangchu.js"></script>
+    <script src="./giohang.js"></script>
+</body>
+
+</html>
