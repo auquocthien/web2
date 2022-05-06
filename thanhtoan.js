@@ -71,16 +71,11 @@ window.addEventListener('load', function(event) {
         document.getElementById('tt_table').appendChild(tr)
     }
 })
-
-const updateQuantity = document.getElementsByClassName('number_quantity');
-for(i = 0; i < updateQuantity.length; i++){
-    var update = updateQuantity[i];
-    update.addEventListener('onchange', function(event) {
-        var itemsUpdate = event.target;
-        let item = {
-            id: itemsUpdate.parentElement.parentElement.parentElement.children[1].children[0].innerText,
-            quantity: itemsUpdate.value
-        }
-        console.log(item)
-    })
+function updateQuantity(){
+    const arrValue = []
+    const newquantity = 0
+    const data = document.getElementsByClassName('tt_data')
+    console.log(data)
 }
+updateQuantity()
+
